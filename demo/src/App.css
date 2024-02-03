@@ -1,0 +1,59 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 16px;
+}
+
+* {
+  font-size: 14px;
+}
+
+
+.App-link {
+  color: #61dafb;
+}
+
+
+button {
+  background-color: black;
+  padding: 8px 16px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  transition: all 0.3s;
+  cursor: pointer;
+  color: #fff;
+}
+
+button span {
+  font-style: italic;
+  color: #fd0;
+}
+
+button:active {
+  transform: scale(0.85);
+}
+
+.btnCont {
+  gap: 8px;
+  display: flex;
+  justify-content: center;
+}
+
+.timerCont {
+  padding: 8px;
+  border: 1px solid black;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.timersCont {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-inline: 8px;
+}
