@@ -1,6 +1,6 @@
 {
   "name": "use-timers-react",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A drop in replacement for js timeout apis in react components.",
   "source": "src/index.ts",
   "main": "dist/index.js",
