@@ -117,9 +117,7 @@ export  default  function  App () {
 #### 4. Using `key`
 
 Keys can be specified in two ways:
-
 - as string to the last argument
-
 - object to the last argument
 
   
