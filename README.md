@@ -1,18 +1,10 @@
 
 # use-timers-react
-
-  
-
 `use-timers-react` is a drop-in replacement for traditional JavaScript timing APIs, tailored for React. This library introduces hooks that enhance the implementation of timers, intervals, and timeouts in your React components, ensuring seamless integration and reliability. With automatic cleanup on component unmount, it eliminates the need for manual timing management, making your code cleaner and more efficient.
-
-  
 
 ## Uses
 
-  
-
 ### Setting timers
-
 ```jsx
 import {useInterval, useTimeout} from  'use-timers-react'
 
@@ -51,7 +43,7 @@ import {useInterval, useTimeout} from  'use-timers-react'
 
 export  default  function  App () {
 
-	const {setTimeout, clearAllTimeouts} =  useTimeout();
+	const {setTimeout} =  useTimeout();
 
 	function  demo(){
 		const  logTime  = () =>  console.log('hello react: ', Date.now());
@@ -59,11 +51,8 @@ export  default  function  App () {
 		myTimer.clear();
 	}
 
-	return  <>
-		<JSX/>
-		<button  onClick={()=>clearAllTimeouts()}>clear all timeouts</button>
-	    </>
-	}
+	return <JSX/>
+}
 ```
 
   
@@ -116,7 +105,7 @@ export  default  function  App () {
 
 #### 4. Using `key`
 
-Keys can be specified in two ways:
+A key can be specified in two ways:
 - as string to the last argument
 - object to the last argument
 
