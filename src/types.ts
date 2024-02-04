@@ -9,7 +9,7 @@ export type Timer = number; // ReturnType<typeof setTimeout> | ReturnType<typeof
 export type CreateTimer = {
   clear: VoidFn;
   reset: () => CreateTimer;
-  id: symbol;
+  id: ID;
 };
 
 export type TimerMetadata = {
