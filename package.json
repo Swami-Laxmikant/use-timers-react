@@ -30,7 +30,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/LaxmanDeadpool/react-timer"
+    "url": "https://github.com/LaxmanDeadpool/use-timers-react"
   },
   "keywords": [
     "react-timers",
@@ -42,7 +42,7 @@
   "author": "Laxmikant Swami",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/LaxmanDeadpool/react-timer"
+    "url": "https://github.com/LaxmanDeadpool/use-timers-react"
   },
   "files": [
     "dist"
@@ -50,7 +50,7 @@
   "peerDependencies": {
     "react": ">=16.8.0"
   },
-  "homepage": "https://github.com/LaxmanDeadpool/react-timer",
+  "homepage": "https://github.com/LaxmanDeadpool/use-timers-react",
   "devDependencies": {
     "@size-limit/preset-small-lib": "^10.0.1",
     "@testing-library/jest-dom": "^6.1.4",
