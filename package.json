@@ -11,8 +11,14 @@
     ".": {
       "types": "./dist/index.d.ts",
       "module": "./dist/index.module.js",
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.js"
+      "import": {
+        "types": "./index.d.mts",
+        "default": "./index.mjs"
+      },
+      "require": {
+        "types": "./index.d.ts",
+        "default": "./index.js"
+      }
     },
     "./package.json": "./package.json"
   },
