@@ -1,5 +1,6 @@
 .idea
 .vscode
+workflow
 examples/bundle.js
 node_modules
 npm-debug.js
@@ -11,4 +12,3 @@ coverage
 tmp
 yarn-error.log
 dist
-.github
