@@ -3,6 +3,7 @@ export declare const useTimer: (timerFn: TimerFn, clearTimer: ClearTimer, type: 
     setCustomTimer: (cb: VoidFn, delay: number, param3?: UserDefinedId | TimerConfig) => {
         clear: () => void;
         reset: () => void;
+        stop: () => void;
         id: symbol;
     };
     clearCustomTimer: (timeoutToClear: UserDefinedId | UseTimer) => void;

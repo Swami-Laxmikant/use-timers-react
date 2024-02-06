@@ -2,6 +2,7 @@ export declare const useInterval: () => {
     setInterval: (cb: import("./types").VoidFn, delay: number, param3?: string | import("./types").TimerConfig) => {
         clear: () => void;
         reset: () => void;
+        stop: () => void;
         id: symbol;
     };
     clearInterval: (timeoutToClear: string | import("./types").UseTimer) => void;
