@@ -37,6 +37,15 @@ export const useTimer = (
         reset: reset,
       });
 
+      const stop = () => {
+        const latestClearFn = timers.get(id)?.clear;
+        if (!latestClearFn) {
+          throwDevWaring(type + " doesn't exist");
+          return;
+        }
+        latestClearFn();
+      };
+
       const _clear = () => {
         const latestClearFn = timers.get(id)?.clear;
         if (!latestClearFn) {
@@ -64,6 +73,7 @@ export const useTimer = (
       return {
         clear: _clear,
         reset: _reset,
+        stop,
         id,
       };
     },
